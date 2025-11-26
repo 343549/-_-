@@ -1,0 +1,1 @@
+loudness و acousticness همبستگی منفی قوی دارند (r=-0.730).
