@@ -1,0 +1,13 @@
+Comparative summary of PCA vs t-SNE:
+PCA: linear, fast, interpretable components; good for dimensionality reduction for modeling.
+t-SNE: nonlinear, better for visualization and discovering local clusters; sensitive to perplexity and computationally slower.
+
+Strong correlations found among selected features (|r|>=0.6):
+ - loudness <-> acousticness : r = -0.730
+
+T-SNE used perplexities: [5, 30, 50]; Subsampled 5000 / 50005 rows for t-SNE.
+
+Recommendations:
+ - Use PCA for dimensionality reduction before modeling.
+ - Use t-SNE for visualization and cluster discovery (on subsamples for large data).
+ - Optionally run PCA first to reduce dimensionality, then run t-SNE on the PCA output to speed up.
